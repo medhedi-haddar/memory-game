@@ -7,41 +7,37 @@
 </head>
 <body>
 
-	 	<header>		
+ 	<header>		
 		<nav>
 			<img class="brand" src="img/logo.png" height="105" width="187" alt="">
 			<ul>
 				<li><span id="score">Score : 0</span></li>
-				<li><a href="#" onclick="melangeCarte()" alt="remelange les cartes">Replay</a></li>
+				<li><a href="#" onclick="melangeCarte()">Replay</a></li>
 			</ul>
 		</nav>
 	</header>
-	<!-- pop up pour afficher des messages  -->
-	<div class="pop-up" id="pop-up">
-	</div>
-<!--  -->
-<main>
-	<div class="container" id="container">
-		<div class="intro">
-			<button class="jouer" onclick="melangeCarte()">JOUER</button>
-			
-			<p>you have ten second to memorize the position of cards .</p>
-			<p><b>good luck</b></p>
+		<!-- pop up pour afficher des messages -->
+		<div class="pop-up" id="pop-up"></div>
+		<!-- / pop up -->
+	<main>
+		<div class="container" id="container">
+			<div class="intro">
+				<button class="jouer" onclick="melangeCarte()">JOUER</button>
+				<p>you have ten second to memorize the position of cards .</p>
+				<p><b>good luck</b></p>
+			</div>
 		</div>
-	</div>
-</main>
-<footer>
-	<span>designed & developped by HADDAR Mohamed Elhedi</span>
-</footer>
-<audio controls id="flip">
-  <source src="flip.mp3" type="audio/mpeg">
-
-</audio>
-<audio controls id="gameSound">
-  <source src="got.mp3" type="audio/mpeg">
-</audio>	
-
-	<script src="js/script.js">	</script>
-	
+	</main>
+	<footer>
+		<span>designed &amp; developped by HADDAR Mohamed Elhedi</span>
+	</footer>
+<!--  sound list -->
+	<audio controls id="flip">
+	  <source src="flip.mp3" type="audio/mpeg">
+	</audio>
+	<audio controls id="gameSound">
+  	<source src="got.mp3" type="audio/mpeg">
+	</audio>	
+	<script src="js/script.js">	</script>	
 </body>
 </html> 
